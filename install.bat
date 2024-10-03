@@ -10,7 +10,7 @@ if not exist "%lang_dir%" (
 )
 
 rem Copy the executable to the installation directory
-xcopy /E /I /Y "\dist\pl_interpreter.exe" "%lang_dir%"
+xcopy /E /I /Y "pl_interpreter.exe" "%lang_dir%"
 
 rem Add the installation directory to the system PATH
 setx PATH "%PATH%;%lang_dir%"
